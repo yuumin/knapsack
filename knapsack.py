@@ -74,8 +74,6 @@ print "x=",
 print(results_greedy)
 print"weight_sum=",
 print (weight_sum)
-#print 'capacity-weight_sum=%d' %(capacity-weight_sum)
-#print 'min(weights)=%d' %(min(weights))
 
 #---------------relaxation--------------#
 
@@ -107,12 +105,3 @@ print "x=",
 print(results_relax)
 print"weight_sum=",
 print (weight_sum3)
-
-
-
-
-
-
-
-
-
