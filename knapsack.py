@@ -37,17 +37,17 @@ t0 = time.clock()#実行時間を計測
 time.sleep(3)
 opt_exact=0
 
-if __name__ == '__main__':
-    binary = [0,1]
+#if __name__ == '__main__':
+binary = [0,1]
     # デカルト積
     # 繰り返しを許す: 1,1 がある
     # 順序が違えば別と見なす: 0,1 と 1,0 は別
-    for element in itertools.product(binary, repeat=N):
-        solutions=np.array(element)
-        obj = np.array(values).dot(solutions)#目的関数値
-        if opt_exact <= obj and np.array(weights).dot(solutions) <= capacity:
-            results_exact=solutions
-            opt_exact=obj
+for element in itertools.product(binary, repeat=N):
+	solutions=np.array(element)
+	obj = np.array(values).dot(solutions)#目的関数値
+	if opt_exact <= obj and np.array(weights).dot(solutions) <= capacity:
+		results_exact=solutions
+        opt_exact=obj
 
 weight_sum2=np.array(weights).dot(results_exact)
 t1 = time.clock()#終了時間の取得
