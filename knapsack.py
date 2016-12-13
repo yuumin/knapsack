@@ -55,10 +55,10 @@ dt=t1-t0
 #time=str(time)
 print("---results(exact)---")
 print "optimum = %d" %(opt_exact)
-print "x=",
-print(results_exact)
-print"weight_sum=",
-print (weight_sum2)
+#print "x=",
+#print(results_exact)
+#print"weight_sum=",
+#print (weight_sum2)
 print 'time(exact)=%f' %(dt)
 
 
@@ -84,10 +84,10 @@ time_greedy=t3-t2
 
 print("---results(greedy)---")
 print "objective_greedy= %d" %(obj_greedy)
-print "x=",
-print(results_greedy)
-print"weight_sum=",
-print (weight_sum)
+#print "x=",
+#print(results_greedy)
+#print"weight_sum=",
+#print (weight_sum)
 print 'time(greedy)=%f' %(time_greedy)
 
 #---------------relaxation--------------#
@@ -104,19 +104,14 @@ k=1
 while k<=N:#N回チェックすれば良い
     indexMAX=max(xrange(N), key=lambda j: copy_ratios2[j]) #評価値最大のindexの取得
     #print copy_ratios2
-    print indexMAX
     if weight_sum3 + weights[indexMAX]<= capacity:
         results_relax[indexMAX] = 1 #容量制限を満たしていたら全部入れる
         weight_sum3 += weights[indexMAX]
-        print 'x[%d]=' %(indexMAX)
-        print results_relax[indexMAX]
         copy_ratios2[indexMAX] += -10000 #一度チェックしたアイテムは排除
     else:
         rate=(capacity-weight_sum3)/float(weights[indexMAX])
         results_relax[indexMAX] =rate #可能な限りできるだけ入れる
         weight_sum3 += weights[indexMAX]*rate
-        print 'x[%d]=' %(indexMAX)
-        print results_relax[indexMAX]
         break
     k+=1
 
@@ -129,6 +124,6 @@ print("---results(relaxation)---")
 print "upperbound = %d" %(int(obj_relax))
 #print "x=",
 #print(results_relax)
-print"weight_sum=",
-print (weight_sum3)
+#print"weight_sum=",
+#print (weight_sum3)
 print 'time(relaxation)=%f' %(time_lp)
