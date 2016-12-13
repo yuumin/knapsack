@@ -3,6 +3,7 @@
 import numpy as np
 import random
 import itertools
+import time
 
 #アイテム数の決定
 while 1:
@@ -31,6 +32,9 @@ for i in range(N):
 print 'capacity=%d' %(capacity)
 
 #---------------全列挙---------------#
+
+t0 = time.clock()#実行時間を計測
+time.sleep(3)
 opt_exact=0
 
 if __name__ == '__main__':
@@ -46,15 +50,22 @@ if __name__ == '__main__':
             opt_exact=obj
 
 weight_sum2=np.array(weights).dot(results_exact)
-
+t1 = time.clock()#終了時間の取得
+dt=t1-t0
+#time=str(time)
 print("---results(exact)---")
 print "optimum = %d" %(opt_exact)
 print "x=",
 print(results_exact)
 print"weight_sum=",
 print (weight_sum2)
+print 'time(exact)=%f' %(dt)
+
 
 #-------------greedy-------------#
+#実行時間を計測
+t2 = time.clock()
+time.sleep(3)
 weight_sum = 0
 copy_ratios=ratios #判定用に使う
 
@@ -68,15 +79,20 @@ while i<=N:#評価値の高い順に追加できるか判定
     i+=1
 
 obj_greedy=np.array(values).dot(np.array(results_greedy))#目的関数値
+t3 = time.clock()#終了時間の取得
+time_greedy=t3-t2
+
 print("---results(greedy)---")
 print "objective_greedy= %d" %(obj_greedy)
 print "x=",
 print(results_greedy)
 print"weight_sum=",
 print (weight_sum)
+print 'time(exact)=%f' %(time_greedy)
 
 #---------------relaxation--------------#
-
+t4 = time.clock()
+time.sleep(3)
 weight_sum3= 0
 
 #評価値の高い順に追加できるか判定
@@ -98,6 +114,9 @@ while k<=N:#N回チェックすれば良い
     k+=1
 
 obj_relax=np.array(values).dot(np.array(results_relax))#目的関数値
+t5 = time.clock()#終了時間の取得
+time_lp=t5-t4
+
 print("---results(relaxation)---")
 #print "objectives_relaxation = %f" %(obj_relax)
 print "upperbound = %d" %(int(obj_relax))
@@ -105,3 +124,4 @@ print "x=",
 print(results_relax)
 print"weight_sum=",
 print (weight_sum3)
+print 'time(relaxation)=%f' %(time_lp)
