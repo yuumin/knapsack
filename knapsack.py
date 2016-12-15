@@ -47,7 +47,7 @@ for element in itertools.product(binary, repeat=N):
 	obj = np.array(values).dot(solutions)#目的関数値
 	if opt_exact <= obj and np.array(weights).dot(solutions) <= capacity:
 		results_exact=solutions
-		 opt_exact=np.array(values).dot(results_exact)
+		opt_exact=np.array(values).dot(results_exact)
 
 weight_sum2=np.array(weights).dot(results_exact)
 t1 = time.clock()#終了時間の取得
