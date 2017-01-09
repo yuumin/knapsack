@@ -23,15 +23,12 @@ class Knapsack:
         self.results_apx=[] 
         self.obj_apx=0 
         
-     
-
-
 
     def decide_num_of_item(self):
         
         while 1:
-            #self.N = int(input('# of items='))
-            self.N = 11
+            self.N = int(input('# of items='))
+            #self.N = 30
             if self.N <10:
                 print('# of items >=10')
             else:
@@ -58,26 +55,6 @@ class Knapsack:
         for i in range(self.N):
             self.results.append(0)
             
-        
-    def __judge_int(self,list):
-    #整数解かどうか判定
-        for i in range(self.N):
-            if list[i]!=int(list[i]):
-                return False 
-                break
-        return True
-    
-    def __judge_weights(self,hoge_list):
-        #渡されたlistの重さ合計値を算出し、容量オーバーなら0、容量ぴったりなら１、容量未満なら-1を返す
-        sum_of_W=0
-        for i in len(hoge_list):
-            sum_of_W+= hoge_list[i]*self.weights[i]
-        if sum_of_W > self.capacity:
-            return 0
-        elif sum_of_W == self.capacity:
-            return 1
-        else:
-            return -1
     
 
     def __judgeValue(self,fixed_list):
@@ -156,8 +133,7 @@ class Knapsack:
         print (self.results)
       #  print (np.dot(np.array(self.results),np.array(self.weights)))
         
-        
-    
+          
     #--------近似解法-------#
     def improved_greedy(self):
         #step1: greedy法
@@ -208,9 +184,7 @@ class Knapsack:
         
        # print (np.dot(np.array(self.results_apx),np.array(self.weights)))
                 
-
-  
-        
+     
 if __name__=="__main__":           
     bb = Knapsack()
     #bb.fix_N()
@@ -220,10 +194,3 @@ if __name__=="__main__":
     bb.depthFirstSearch()
     bb.improved_greedy()
     
-    
-        
-          
-    
- #10def judge_Value(self,fixed_list):"
-    
-
