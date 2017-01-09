@@ -1,0 +1,66 @@
+出力例1
+
+item[0]:value=40, weight=1, ratio=40.000000
+item[1]:value=53, weight=6, ratio=8.833333
+item[2]:value=23, weight=5, ratio=4.600000
+item[3]:value=39, weight=9, ratio=4.333333
+item[4]:value=35, weight=18, ratio=1.944444
+item[5]:value=39, weight=31, ratio=1.258065
+item[6]:value=35, weight=36, ratio=0.972222
+item[7]:value=36, weight=51, ratio=0.705882
+item[8]:value=3, weight=11, ratio=0.272727
+item[9]:value=12, weight=53, ratio=0.226415
+item[10]:value=6, weight=35, ratio=0.171429
+capacity=97
+
+---------分枝限定法---------
+最適値=232
+[1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0]
+--------1/2-近似解法--------
+目的関数値＝232
+近似比=1.000000
+[1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0]
+
+
+
+出力例2
+
+item[0]:value=30, weight=2, ratio=15.000000
+item[1]:value=38, weight=3, ratio=12.666667
+item[2]:value=35, weight=3, ratio=11.666667
+item[3]:value=55, weight=6, ratio=9.166667
+item[4]:value=44, weight=8, ratio=5.500000
+item[5]:value=28, weight=12, ratio=2.333333
+item[6]:value=50, weight=25, ratio=2.000000
+item[7]:value=52, weight=35, ratio=1.485714
+item[8]:value=54, weight=39, ratio=1.384615
+item[9]:value=27, weight=25, ratio=1.080000
+item[10]:value=3, weight=3, ratio=1.000000
+item[11]:value=58, weight=59, ratio=0.983051
+item[12]:value=30, weight=32, ratio=0.937500
+item[13]:value=47, weight=51, ratio=0.921569
+item[14]:value=23, weight=25, ratio=0.920000
+item[15]:value=28, weight=31, ratio=0.903226
+item[16]:value=39, weight=47, ratio=0.829787
+item[17]:value=22, weight=27, ratio=0.814815
+item[18]:value=46, weight=58, ratio=0.793103
+item[19]:value=33, weight=43, ratio=0.767442
+item[20]:value=36, weight=48, ratio=0.750000
+item[21]:value=40, weight=54, ratio=0.740741
+item[22]:value=14, weight=19, ratio=0.736842
+item[23]:value=24, weight=35, ratio=0.685714
+item[24]:value=37, weight=55, ratio=0.672727
+item[25]:value=21, weight=43, ratio=0.488372
+item[26]:value=5, weight=12, ratio=0.416667
+item[27]:value=22, weight=54, ratio=0.407407
+item[28]:value=18, weight=57, ratio=0.315789
+item[29]:value=3, weight=30, ratio=0.100000
+capacity=295
+
+---------分枝限定法---------
+最適値=541
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+--------1/2-近似解法--------
+目的関数値＝535
+近似比=0.988909
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
