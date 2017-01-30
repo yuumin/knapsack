@@ -20,14 +20,8 @@ class Knapsack:
     #--------branch and bound　で使う----------#
         self.results=[] #暫定解
         self.obj=0 #暫定解の目的関数値
-    #--------1/2-近似解法　で使う----------#
-        self.results_apx=[] 
-        self.obj_apx=0 
-        self.time=0
-        
-        
-        
-        #peg#
+
+       # -----pegging test用-----#
         self.results=[]
         self.unfixed=[] #未決定の番号を格納
         self.new_weights=[]
@@ -80,12 +74,8 @@ class Knapsack:
             else:
                # rate=(self.capacity-sum_w)/float(self.weights[i])
                 results1[i]=0
-
-
         greedy_obj=np.dot(np.array(results1),np.array(self.values))
-        
-        #固定されなかった番号を覚えておくリスト
-        unfixed=[]
+        unfixed=[] #固定されなかった番号を覚えておくリスト
         
         for index in range(self.N):
             list=[0]*self.N
@@ -106,16 +96,13 @@ class Knapsack:
                         rate=(self.capacity-sum_w)/float(self.weights[i])
                         list[i]=rate
                         break
-                
 
             if np.dot(np.array(list),np.array(self.values)) < greedy_obj:
 
                 self.results[index]=results1[index]
                 print(' %d'%(results1[index]),end="")
             else:
-  
                 unfixed.append(index)
-                
                 print(' *',end="")
         print(']')
         self.unfixed=unfixed
@@ -124,7 +111,6 @@ class Knapsack:
 
     def change_problem(self): #釘付けされていない変数だけの問題を作成
 
-        
         self.new_capacity=self.capacity-np.dot(np.array(self.results),np.array(self.weights))
         self.new_N=len(self.unfixed)
         
@@ -200,10 +186,7 @@ class Knapsack:
             print ("---------貪欲法が最適解---------")
             print ('最適値=%d' %(np.dot(np.array(self.results),np.array(self.values))))
             print (self.results)
-       #     print('探索ノード数=%d' %(self.num_of_nodes))
-            end=time.time()
-         #   print('実行時間=%f'%(end-start))
-  
+
         else:  
 
             start=time.time()
@@ -273,10 +256,7 @@ class Knapsack:
             end=time.time()
             self.time=end-start
             print('実行時間=%f'%(end-start))
-
-        
-       # print (np.dot(np.array(self.results_apx),np.array(self.weights)))
-                
+            
      
 if __name__=="__main__":           
     bb = Knapsack()
