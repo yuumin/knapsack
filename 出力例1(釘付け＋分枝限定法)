@@ -1,0 +1,118 @@
+
+# of items=100
+item[0]:value=55, weight=2, ratio=27.500000
+item[1]:value=53, weight=4, ratio=13.250000
+item[2]:value=9, weight=1, ratio=9.000000
+item[3]:value=31, weight=4, ratio=7.750000
+item[4]:value=36, weight=7, ratio=5.142857
+item[5]:value=55, weight=11, ratio=5.000000
+item[6]:value=29, weight=6, ratio=4.833333
+item[7]:value=23, weight=5, ratio=4.600000
+item[8]:value=58, weight=13, ratio=4.461538
+item[9]:value=35, weight=12, ratio=2.916667
+item[10]:value=30, weight=11, ratio=2.727273
+item[11]:value=13, weight=5, ratio=2.600000
+item[12]:value=55, weight=22, ratio=2.500000
+item[13]:value=46, weight=19, ratio=2.421053
+item[14]:value=19, weight=8, ratio=2.375000
+item[15]:value=47, weight=21, ratio=2.238095
+item[16]:value=46, weight=21, ratio=2.190476
+item[17]:value=24, weight=11, ratio=2.181818
+item[18]:value=10, weight=5, ratio=2.000000
+item[19]:value=58, weight=29, ratio=2.000000
+item[20]:value=34, weight=17, ratio=2.000000
+item[21]:value=54, weight=28, ratio=1.928571
+item[22]:value=53, weight=32, ratio=1.656250
+item[23]:value=31, weight=19, ratio=1.631579
+item[24]:value=32, weight=21, ratio=1.523810
+item[25]:value=38, weight=26, ratio=1.461538
+item[26]:value=38, weight=28, ratio=1.357143
+item[27]:value=19, weight=14, ratio=1.357143
+item[28]:value=38, weight=28, ratio=1.357143
+item[29]:value=50, weight=38, ratio=1.315789
+item[30]:value=46, weight=35, ratio=1.314286
+item[31]:value=59, weight=45, ratio=1.311111
+item[32]:value=48, weight=37, ratio=1.297297
+item[33]:value=54, weight=43, ratio=1.255814
+item[34]:value=26, weight=21, ratio=1.238095
+item[35]:value=59, weight=48, ratio=1.229167
+item[36]:value=43, weight=35, ratio=1.228571
+item[37]:value=11, weight=9, ratio=1.222222
+item[38]:value=48, weight=40, ratio=1.200000
+item[39]:value=57, weight=50, ratio=1.140000
+item[40]:value=51, weight=48, ratio=1.062500
+item[41]:value=52, weight=49, ratio=1.061224
+item[42]:value=50, weight=48, ratio=1.041667
+item[43]:value=51, weight=49, ratio=1.040816
+item[44]:value=53, weight=51, ratio=1.039216
+item[45]:value=43, weight=42, ratio=1.023810
+item[46]:value=59, weight=59, ratio=1.000000
+item[47]:value=7, weight=7, ratio=1.000000
+item[48]:value=30, weight=31, ratio=0.967742
+item[49]:value=36, weight=38, ratio=0.947368
+item[50]:value=44, weight=48, ratio=0.916667
+item[51]:value=38, weight=42, ratio=0.904762
+item[52]:value=47, weight=53, ratio=0.886792
+item[53]:value=45, weight=54, ratio=0.833333
+item[54]:value=45, weight=55, ratio=0.818182
+item[55]:value=46, weight=57, ratio=0.807018
+item[56]:value=18, weight=23, ratio=0.782609
+item[57]:value=39, weight=50, ratio=0.780000
+item[58]:value=34, weight=44, ratio=0.772727
+item[59]:value=24, weight=33, ratio=0.727273
+item[60]:value=36, weight=51, ratio=0.705882
+item[61]:value=30, weight=44, ratio=0.681818
+item[62]:value=23, weight=35, ratio=0.657143
+item[63]:value=25, weight=40, ratio=0.625000
+item[64]:value=18, weight=29, ratio=0.620690
+item[65]:value=30, weight=51, ratio=0.588235
+item[66]:value=17, weight=29, ratio=0.586207
+item[67]:value=18, weight=33, ratio=0.545455
+item[68]:value=14, weight=26, ratio=0.538462
+item[69]:value=13, weight=25, ratio=0.520000
+item[70]:value=17, weight=33, ratio=0.515152
+item[71]:value=26, weight=52, ratio=0.500000
+item[72]:value=15, weight=32, ratio=0.468750
+item[73]:value=22, weight=47, ratio=0.468085
+item[74]:value=10, weight=23, ratio=0.434783
+item[75]:value=23, weight=53, ratio=0.433962
+item[76]:value=19, weight=44, ratio=0.431818
+item[77]:value=25, weight=58, ratio=0.431034
+item[78]:value=14, weight=34, ratio=0.411765
+item[79]:value=11, weight=28, ratio=0.392857
+item[80]:value=19, weight=53, ratio=0.358491
+item[81]:value=15, weight=43, ratio=0.348837
+item[82]:value=9, weight=28, ratio=0.321429
+item[83]:value=12, weight=38, ratio=0.315789
+item[84]:value=16, weight=59, ratio=0.271186
+item[85]:value=2, weight=9, ratio=0.222222
+item[86]:value=8, weight=36, ratio=0.222222
+item[87]:value=6, weight=28, ratio=0.214286
+item[88]:value=8, weight=41, ratio=0.195122
+item[89]:value=8, weight=47, ratio=0.170213
+item[90]:value=5, weight=30, ratio=0.166667
+item[91]:value=7, weight=56, ratio=0.125000
+item[92]:value=5, weight=49, ratio=0.102041
+item[93]:value=5, weight=52, ratio=0.096154
+item[94]:value=4, weight=42, ratio=0.095238
+item[95]:value=2, weight=24, ratio=0.083333
+item[96]:value=3, weight=36, ratio=0.083333
+item[97]:value=2, weight=26, ratio=0.076923
+item[98]:value=1, weight=16, ratio=0.062500
+item[99]:value=1, weight=23, ratio=0.043478
+capacity=983
+釘付けリスト=[  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 * * * 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+# 未決定な変数/# 全変数 = 0.040000
+
+---------分枝限定法(縮小した問題)---------
+最適値=53
+[0, 0, 1, 0]
+探索ノード数=16
+実行時間=0.000301
+
+--------- 最終結果---------
+最適値=1726
+探索ノード数=16
+実行時間=0.000301
